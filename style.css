@@ -7,3 +7,16 @@ h1{
     text-align: center;
     color: rgb(69, 38, 82);
 }
+
+header{
+    background-color: rgb(37, 34, 34);
+}
+ a{
+    color: bisque;
+    
+ }
+
+ footer{
+    background-color: rgb(37, 34, 34);
+
+ }

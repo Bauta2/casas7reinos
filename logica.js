@@ -167,6 +167,42 @@ const casas = [
 
 
     },
+
+    {
+        casa:"Frey" ,
+        asentamiento:"Los Gemelos" ,
+        lema:"Desconocido" ,
+        blason:"https://static.wikia.nocookie.net/hieloyfuego/images/f/f0/Casa_Frey.png/revision/latest?cb=20161230201512" ,
+        blasonDescrpcion:"Dos torres gemelas azul oscuro sobre un fondo gris plateado",
+        señor:"Lord Walder frey" ,
+        region:"Tierra de los Rios" ,
+        vasallaje:"Casa Tully de Aguasdulces" ,
+        guarnicion: {
+            caballeros:"25" ,
+            soldados:"1500" ,
+            arqueros:"440" ,
+        }
+
+
+    },
+
+    {
+        casa:"Velaryon" ,
+        asentamiento:"Marcaceniza" ,
+        lema:"El Viejo, el Verdadero, el Valiente" ,
+        blason:"https://static.wikia.nocookie.net/hieloyfuego/images/f/f3/Casa_Velaryon.png/revision/latest?cb=20170514204249" ,
+        blasonDescrpcion:"Un caballo de mar de plata sobre campo verde mar",
+        señor:"Lord Monford Velaryon" ,
+        region:"Tierras de la Corona" ,
+        vasallaje:"Casa Baratheon de Rocadragón" ,
+        guarnicion: {
+            caballeros:"9" ,
+            soldados:"350" ,
+            arqueros:"110" ,
+        }
+
+
+    },
     
    
 
@@ -180,26 +216,30 @@ function unirseComoCaballero(casaNombre, casaBlason) {
         const casa = casas.find(c => c.casa === casaNombre);
         const caballerosElement = document.getElementById(`caballeros-${casaNombre}`);
         
-
         const nuevosCaballeros = parseInt(caballerosElement.textContent.split(' ')[1]) + 1;
     
         caballerosElement.textContent = `Caballeros: ${nuevosCaballeros}`;
-            
+    
         usuarioUnido = true;
         const boton = document.querySelector(`button[data-casa="${casaNombre}"]`);
         boton.disabled = true;
-  
+
+        const mensaje = `Has puesto tu espada al servicio de ${casa.señor} de la Casa ${casa.casa} de ${casa.asentamiento}. Sirve con dedicación a tu nuevo señor.`;
+        
+
         Swal.fire({
             title: '¡Te has unido como caballero!',
             icon: 'success',
+            text: mensaje,
             html: `
-                <p>Ahora eres un caballero de la Casa ${casaNombre}.</p>
-                <img src="${casaBlason}" alt="Blason de ${casaNombre}" style="max-width: 100px;">
-            `,
+            <p>Has puesto tu espada al servicio de ${casa.señor} de la Casa ${casa.casa} de ${casa.asentamiento}. Sirve con dedicación a tu nuevo señor.</p>
+            <img src="${casaBlason}" alt="Blason de ${casaNombre}" style="max-width: 100px;">
+        `,
             confirmButtonText: 'Aceptar'
         });
     }
 }
+
 
 
 
@@ -240,7 +280,3 @@ casas.forEach(casa => {
     contenedor.innerHTML += generarCard(casa);
 });
 
-
-boton.onclick = () => {
-    document.body.className = "dark";
-}
