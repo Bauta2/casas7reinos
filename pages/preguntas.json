@@ -1,0 +1,28 @@
+[
+    {
+        "pregunta": "¿Quién es conocido como el Lobo Huargo?",
+        "opciones": ["Jon Nieve", "Bran Stark", "Robb Stark"],
+        "respuesta": 0
+    },
+    {
+        "pregunta": "¿Qué casa tiene el lema 'Oído Todo'?",
+        "opciones": ["Casa Martell", "Casa Tyrell", "Casa Baelish"],
+        "respuesta": 1
+    },
+    {
+        "pregunta": "¿Qué casa tiene el lema 'Oído Todo'?",
+        "opciones": ["Casa Martell", "Casa Tyrell", "Casa Baelish"],
+        "respuesta": 1
+    },
+    {
+        "pregunta": "¿Qué casa tiene el lema 'Oído Todo'?",
+        "opciones": ["Casa Martell", "Casa Tyrell", "Casa Baelish"],
+        "respuesta": 1
+    },
+    {
+        "pregunta": "¿Qué casa tiene el lema 'Oído Todo'?",
+        "opciones": ["Casa Martell", "Casa Tyrell", "Casa Baelish"],
+        "respuesta": 1
+    }
+
+  ]
