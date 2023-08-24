@@ -1,28 +1,29 @@
 [
     {
-        "pregunta": "¿Quién es conocido como el Lobo Huargo?",
+        "pregunta": "¿Quién es conocido como el Joven Lobo?",
         "opciones": ["Jon Nieve", "Bran Stark", "Robb Stark"],
+        "respuesta": 2
+    },
+    {
+        "pregunta": "¿Qué casa tiene el lema 'Ninguna canción más dulce'?",
+        "opciones": ["Casa Caron", "Casa Tyrell", "Casa Baelish"],
         "respuesta": 0
     },
     {
-        "pregunta": "¿Qué casa tiene el lema 'Oído Todo'?",
-        "opciones": ["Casa Martell", "Casa Tyrell", "Casa Baelish"],
+        "pregunta": "¿Qué está prohibido y castigado con la muerte en Vaes Dothrak, la 'ciudad' Dothraki?",
+        "opciones": ["Matar un caballo o comer su carne", "Desenvainar un arma y/o derramar sangre", "Bañarse en el lago 'Vientre del Mundo'"],
         "respuesta": 1
     },
     {
-        "pregunta": "¿Qué casa tiene el lema 'Oído Todo'?",
-        "opciones": ["Casa Martell", "Casa Tyrell", "Casa Baelish"],
+        "pregunta": "¿Quién asesinó a la mano del rey, Jon Arryn?",
+        "opciones": ["Cersei Lannister", "Lysa Arryn", "Murió por causas naturales"],
         "respuesta": 1
     },
     {
-        "pregunta": "¿Qué casa tiene el lema 'Oído Todo'?",
-        "opciones": ["Casa Martell", "Casa Tyrell", "Casa Baelish"],
-        "respuesta": 1
-    },
-    {
-        "pregunta": "¿Qué casa tiene el lema 'Oído Todo'?",
-        "opciones": ["Casa Martell", "Casa Tyrell", "Casa Baelish"],
-        "respuesta": 1
+        "pregunta": "¿Cómo es el blasón de la casa Mallister'?",
+        "opciones": ["Una flor", "Un jabalí", "Una aguila"],
+        "respuesta": 2
     }
+    
 
   ]

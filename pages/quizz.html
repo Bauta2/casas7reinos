@@ -3,16 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <title>Quiz de ASOIAF</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <!--fuente de la página-->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Crimson+Text&family=Fasthand&family=Lobster&family=MedievalSharp&family=Raleway&display=swap" rel="stylesheet">
+    <title>Quiz de ASOIAF</title>
 </head>
 <body>
-    <div class="container mt-4">
+    <header>
+        <nav class="navbar navbar-expand-lg menu">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Cuernos de guerra</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tu casa</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/quizz.html">Quizz</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>    
+    <div class="custom-container">
         <h1>Quiz de "Canción de Hielo y Fuego"</h1>
-        <div id="timer">Tiempo transcurrido: <span id="time">0</span> segundos</div>
+        <h3><div id="timer">Tiempo transcurrido: <span id="time">0</span> segundos</div></h3>
         <div id="quiz-container">
-            <!-- Preguntas y opciones se agregarán aquí dinámicamente -->
+            <!-- Preguntas y opciones -->
         </div>
         <button id="submit-btn" class="btn btn-primary">Enviar Respuestas</button>
         <div id="result"></div>

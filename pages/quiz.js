@@ -1,38 +1,38 @@
 const quizContainer = document.getElementById('quiz-container');
 const submitButton = document.getElementById('submit-btn');
-const timerContainer = document.getElementById('timer'); // Nuevo elemento para mostrar el temporizador
+const timerContainer = document.getElementById('timer'); 
 
 let score = 0;
 let questions = [];
 
-let timeElapsed = 0; // Tiempo en segundos transcurridos
-let timerInterval; // Variable para almacenar el intervalo del temporizador
+let timeElapsed = 0;
+let timerInterval; 
 
-// Función para iniciar el temporizador
+/* Función para iniciar el temporizador */
 function startTimer() {
-    timerInterval = setInterval(updateTimer, 1000); // Actualizar cada segundo
+    timerInterval = setInterval(updateTimer, 1000); 
 }
 
-// Función para actualizar el temporizador
+/* Función para actualizar el temporizador */
 function updateTimer() {
     timeElapsed++;
     document.getElementById('time').textContent = timeElapsed;
 }
 
-// Obtener preguntas usando Fetch API
+
 fetch('preguntas.json')
     .then(response => response.json())
     .then(data => {
         questions = data; 
-        createQuiz(); // Crear el quiz al cargar las preguntas
-        startTimer(); // Iniciar el temporizador al cargar las preguntas
+        createQuiz();
+        startTimer(); /* Iniciar el temporizador al cargar las preguntas */
     });
 
-// Función para crear el quiz
+/* Función para crear el quiz */
 function createQuiz() {
     questions.forEach((question, index) => {
         const questionDiv = document.createElement('div');
-        questionDiv.className = 'card mt-4';
+        questionDiv.className = 'card mt-4 custom-question-container';
         questionDiv.innerHTML = `
             <div class="card-body">
                 <h5 class="card-title">Pregunta ${index + 1}:</h5>
@@ -51,14 +51,14 @@ function createQuiz() {
     });
 }
 
-// Calcular resultado al hacer clic en "Enviar Respuestas"
+/* Calcular resultado al hacer clic en "Enviar Respuestas" */
 submitButton.addEventListener('click', () => {
-    clearInterval(timerInterval); // Detener el temporizador al enviar respuestas
+    clearInterval(timerInterval); /* Detener el temporizador al enviar respuestas */
     calculateScore();
     showResults();
 });
 
-// Función para calcular el puntaje
+/* Función para calcular el puntaje */
 function calculateScore() {
     const questionDivs = document.querySelectorAll('.card');
     
@@ -73,7 +73,7 @@ function calculateScore() {
     });
 }
 
-// Función para mostrar los resultados y el botón "Try Again"
+/* Función para mostrar los resultados y el botón "Try Again" */
 function showResults() {
     Swal.fire({
         title: 'Resultados del Quiz',
@@ -84,7 +84,7 @@ function showResults() {
         cancelButtonText: 'Cerrar'
     }).then((result) => {
         if (result.isConfirmed) {
-            location.reload(); // Reiniciar la página para volver a intentar
+            location.reload(); /* Reiniciar la página para volver a intentar */
         }
     });
 }

@@ -1,3 +1,19 @@
+/*imagenes blasones*/
+
+const imageUrlMarbrand = "imgs/marbrand.webp";
+const ImageUrlYronwood = "imgs/Casa_Yronwood.webp"
+const ImageUrlBolton ="imgs/Casa_Bolton.webp"
+const ImageUrlMallister="imgs/Casa_Mallister.webp"
+const ImageUrlCaron="imgs/Casa_Caron.webp"
+const ImageUrlRoyce="imgs/Casa_Royce.webp"
+const ImageUrlOakheart="imgs/Casa_Oakheart.webp"
+const ImageUrlCrakehall="imgs/Casa_Crakehall.webp"
+const ImageUrlHightower="imgs/Casa_Hightower.webp"
+const ImageUrlFossoway="imgs/Casa_Fossoway_Manzana_Roja.webp"
+const ImageUrlFrey ="imgs/Casa_Frey.webp"
+const ImageUrlVelaryon = "imgs/Casa_Velaryon.webp"
+
+
 /*Función constructora de las casas*/
 
 function Casa(casa, asentamiento, lema, blason, blasonDescrpcion, señor, region, vasallaje, guarnicion) {
@@ -17,7 +33,7 @@ const casas = [
         "Yronwood",
         "Palosanto",
         "Nosotros protegemos el camino",
-        "https://static.wikia.nocookie.net/hieloyfuego/images/3/35/Casa_Yronwood.png/revision/latest?cb=20130415204423",
+        ImageUrlYronwood,
         "Un porticullis de sable en campo arena",
         "Lord Anders Yronwood",
         "Dorne",
@@ -32,7 +48,7 @@ const casas = [
         "Bolton" ,
         "Fuerte Terror" ,
         "Nuestras espadas están afiladas" ,
-        "https://static.wikia.nocookie.net/hieloyfuego/images/3/36/Casa_Bolton.png/revision/latest?cb=20161230200704" ,
+        ImageUrlBolton ,
         "Un hombre desollado de gules en campo carnación de sangre",
         "Lord Roose Bolton" ,
         "El Norte" ,
@@ -47,7 +63,7 @@ const casas = [
         "Marbrand" ,
         "Marcaceniza" ,
         "Ardiendo con intensidad" ,
-        "https://static.wikia.nocookie.net/hieloyfuego/images/4/41/Casa_Marbrand.png/revision/latest?cb=20140602053653" ,
+        imageUrlMarbrand ,
         "Un árbol ardiendo, naranja sobre cenizo",
         "Lord Damon Marbrand" ,
         "Tierras del Oeste" ,
@@ -62,7 +78,7 @@ const casas = [
         "Mallister" ,
         "Varamar" ,
         "Por encima del resto" ,
-        "https://static.wikia.nocookie.net/hieloyfuego/images/1/11/Casa_Mallister.png/revision/latest?cb=20220720191300" ,
+        ImageUrlMallister ,
         "Un águila plateada sobre campo púrpura",
         "Lord Jason Mallister" ,
         "Tierra de los Ríos" ,
@@ -77,7 +93,7 @@ const casas = [
         "Caron" ,
         "Nocturnia" ,
         "Ninguna canción más dulce" ,
-        "https://static.wikia.nocookie.net/hieloyfuego/images/1/1a/Casa_Caron.png/revision/latest?cb=20170529042907" ,
+        ImageUrlCaron ,
         "Un campo de oro con ruiseñores de sable",
         "Lord Bryce Caron" ,
         "Tierras de la Tormentas" ,
@@ -92,7 +108,7 @@ const casas = [
         "Royce" ,
         "Piedra de las Runas" ,
         "Nosotros recordamos" ,
-        "https://static.wikia.nocookie.net/hieloyfuego/images/5/5b/Casa_Royce.png/revision/latest?cb=20130502215119" ,
+        ImageUrlRoyce ,
         "Una lluvia de piedras sobre campo de bronce con bordura de runas",
         "Lord Yohn Royce" ,
         "Valle de Arryn" ,
@@ -107,7 +123,7 @@ const casas = [
         "Oakheart" ,
         "Roble viejo" ,
         "Nuestras Raíces son Profundas" ,
-        "https://static.wikia.nocookie.net/hieloyfuego/images/d/d7/Casa_Oakheart.png/revision/latest?cb=20170529034614" ,
+        ImageUrlOakheart ,
         "Tres hojas de roble de sinople en campo de oro",
         "Lady Arwyn Oakheart" ,
         "El Dominio" ,
@@ -122,7 +138,7 @@ const casas = [
         "Crakehall" ,
         "Refugio Quebrado" ,
         "Ninguno más Fiero" ,
-        "https://static.wikia.nocookie.net/hieloyfuego/images/a/a1/Casa_Crakehall.png/revision/latest?cb=20170514200929" ,
+        ImageUrlCrakehall ,
         "Un jabalí negro y blanco sobre fondo marrón",
         "Lord Roland Crakehall" ,
         "Tierras del Oeste" ,
@@ -137,7 +153,7 @@ const casas = [
         "Hightower" ,
         "Antigua" ,
         "Iluminamos el camino" ,
-        "https://static.wikia.nocookie.net/hieloyfuego/images/a/a2/Casa_Hightower.png/revision/latest?cb=20130415202823" ,
+        ImageUrlHightower ,
         "Un faro de piedra blanca con una llama en la punta",
         "Lord Leyton Hightower" ,
         "El Dominio" ,
@@ -153,7 +169,7 @@ const casas = [
         "Fossoway" ,
         "La Sidra" ,
         "El sabor de la gloria" ,
-        "https://static.wikia.nocookie.net/hieloyfuego/images/9/9b/Casa_Fossoway_Manzana_Roja.png/revision/latest?cb=20140410190120" ,
+        ImageUrlFossoway ,
         "Una manzana de gules en campo de oro",
         "Lord Owen Fossoway" ,
         "El Dominio" ,
@@ -169,7 +185,7 @@ const casas = [
         "Frey" ,
         "Los Gemelos" ,
         "Desconocido" ,
-        "https://static.wikia.nocookie.net/hieloyfuego/images/f/f0/Casa_Frey.png/revision/latest?cb=20161230201512" ,
+        ImageUrlFrey ,
         "Dos torres gemelas azul oscuro sobre un fondo gris plateado",
         "Lord Walder frey" ,
         "Tierra de los Rios" ,
@@ -185,7 +201,7 @@ const casas = [
         "Velaryon" ,
         "Marcaderiva" ,
         "El Viejo, el Verdadero, el Valiente" ,
-        "https://static.wikia.nocookie.net/hieloyfuego/images/f/f3/Casa_Velaryon.png/revision/latest?cb=20170514204249" ,
+        ImageUrlVelaryon ,
         "Un caballo de mar de plata sobre campo verde mar",
         "Lord Monford Velaryon" ,
         "Tierras de la Corona" ,
