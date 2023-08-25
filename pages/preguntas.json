@@ -21,7 +21,7 @@
     },
     {
         "pregunta": "¿Cómo es el blasón de la casa Mallister'?",
-        "opciones": ["Una flor", "Un jabalí", "Una aguila"],
+        "opciones": ["Una flor", "Un jabalí", "Un águila"],
         "respuesta": 2
     }
     
